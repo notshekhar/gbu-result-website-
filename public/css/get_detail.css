@@ -1,0 +1,22 @@
+@font-face {
+    font-family: noe;
+    src: url(../fonts/noe.woff);
+}
+@font-face {
+    font-family: normal;
+    src: url(../fonts/normal);
+}
+:root {
+    --font: normal;
+    --bold: noe;
+}
+
+.admitCard {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+}

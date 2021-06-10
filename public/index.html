@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+        <title>Download your result</title>
+        <link rel="stylesheet" href="./css/index.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        />
+        <link rel="stylesheet" href="./css/bootstrap.min.css" />
+        <script src="./js/cookie.js"></script>
+        <script src="./js/element.js"></script>
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+    </head>
+    <body>
+        <div class="loading"></div>
+        <!-- download div -->
+        <div class="download">
+            <div class="close"><i></i></div>
+            <div class="header">
+                <button class="downbtn">Download</button>
+            </div>
+            <div class="result_div"></div>
+        </div>
+        <div class="login_wrap">
+            <div class="close"></div>
+            <div class="wrap">
+                <i class="close_btn fas fa-times fa-2x"></i>
+                <input
+                    type="text"
+                    class="username"
+                    placeholder="Enter Username"
+                />
+                <input
+                    type="password"
+                    class="password"
+                    placeholder="Enter password"
+                />
+                <button>Login</button>
+            </div>
+        </div>
+        <div class="wrap">
+            <div class="header">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="" />
+                </div>
+                <!-- <div class="tabs"></div> -->
+                <div class="admin">
+                    <button class="login">Admin Login</button>
+                </div>
+            </div>
+            <div class="strip"></div>
+            <!-- <img src="./images/_dsf8951.jpg" alt=""> -->
+            <div class="body">
+                <div class="fonts">
+                    <span>Download your result</span>
+                </div>
+                <div class="wrap_body">
+                    <span>Enter Your Roll Number, eg:18/BEC/046</span>
+                    <input
+                        type="text"
+                        placeholder="Enter your roll no, eg: 18/bec/046"
+                        class="roll_no inp"
+                        name="roll_no"
+                        onkeyup="this.value = this.value.toUpperCase()"
+                    />
+                    <span>Enter Your Email</span>
+                    <input
+                        type="text"
+                        placeholder="example@xyz.com"
+                        class="email inp"
+                        name="email"
+                    />
+                    <span>Enter Your Mobile</span>
+                    <input
+                        type="number"
+                        placeholder="9027760089"
+                        class="mobile inp"
+                        name="mobile"
+                    />
+                    <button class="submit">SUBMIT</button>
+                    <button
+                        class="problem"
+                        onclick="location.href='pdf/instructions.pdf'"
+                    >
+                        Can't Download Result?
+                    </button>
+                </div>
+            </div>
+            <!-- footer  -->
+            <div class="footer">
+                <div class="top_footer">
+                    <div class="top_footer_wrap">
+                        <div class="section">
+                            <div class="contact_icons">
+                                <a href="" class="contact_list" target="_blank"
+                                    ><img src="" alt=""
+                                /></a>
+                                <a href="" class="contact_list" target="_blank"
+                                    ><img src="" alt=""
+                                /></a>
+                                <a href="" class="contact_list" target="_blank"
+                                    ><img src="" alt=""
+                                /></a>
+                                <a href="" class="contact_list" target="_blank"
+                                    ><img src="" alt=""
+                                /></a>
+                            </div>
+                            <div class="contact_address">
+                                Gautam Buddha University Greater Noida Gautam
+                                Budh Nagar Uttar Pradesh (India) - 201310 Phone
+                                No.: 0120-2344200
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom_footer">
+                    Copyright © 2009 Gautam Buddha University. All rights
+                    reserved.
+                </div>
+            </div>
+            <div class="topstrip">
+                Made by&nbsp;&nbsp;
+                <a href="https://notshekhar.github.io/" target="_blank"
+                    >Shekhar Tyagi</a
+                >&nbsp;&nbsp;With&nbsp;&nbsp;<span
+                    ><i class="fas fa-heart"></i
+                ></span>
+            </div>
+        </div>
+        <script src="./js/index.js"></script>
+    </body>
+</html>
