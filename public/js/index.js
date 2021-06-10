@@ -260,7 +260,7 @@ window.onpopstate = (e) => {
 //     ],
 //     result_summary: "Promoted",
 // }
-showResult(data)
+// showResult(data)
 function showResult(details) {
     download_button.onclick = () => print(details.Roll_Number)
     // function download(filename) {
