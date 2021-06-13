@@ -292,7 +292,7 @@ body > div > div.body > div.wrap_body > div {
     top: 0px;
     left: 0px;
     transition: all 300ms;
-    display: none;
+    display: block;
     width: 100%;
     height: 100%;
     overflow-y: scroll;

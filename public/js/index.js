@@ -160,107 +160,107 @@ window.onpopstate = (e) => {
     }
 }
 
-// let data = {
-//     id: 13600,
-//     Batch: "2020-2022",
-//     SCHOOL: "SOBT",
-//     Programme: "M.Sc. (Biotechnology)",
-//     Semester: "I",
-//     Specialization: "-",
-//     Roll_Number: "20/MBT/001",
-//     "Photo Upload(.jpg)": null,
-//     Student_Name: "Adhishree Yadav",
-//     Gender: "Female",
-//     "Date of Birth": "27/07/2000",
-//     Father_s_name: "",
-//     Email: "biotech1253@gmail.com",
-//     "Mobile no": "8960771253",
-//     "Aadhar no": null,
-//     "Aadhar Image(.jpg)": null,
-//     "Signature(.jpg)": null,
-//     "Fee Status": "Submitted",
-//     result: [
-//         {
-//             Roll_Number: "20/MBT/001",
-//             subject: "Biochemistry",
-//             subjectCode: "BtMSc501",
-//             credit: "3",
-//             score: "0",
-//         },
-//         {
-//             Roll_Number: "20/MBT/001",
-//             subject: "Cell and Molecular Biology",
-//             subjectCode: "BtMSc503",
-//             credit: "3",
-//             score: "0",
-//         },
-//         {
-//             Roll_Number: "20/MBT/001",
-//             subject: "Plant and Animal Biotechnology",
-//             subjectCode: "BtMSc505",
-//             credit: "3",
-//             score: "0",
-//         },
-//         {
-//             Roll_Number: "20/MBT/001",
-//             subject: "Microbiology",
-//             subjectCode: "BtMSc507",
-//             credit: "2",
-//             score: "0",
-//         },
-//         {
-//             Roll_Number: "20/MBT/001",
-//             subject: "Genetics",
-//             subjectCode: "BtMSc509",
-//             credit: "2",
-//             score: "0",
-//         },
-//         {
-//             Roll_Number: "20/MBT/001",
-//             subject: "Biostatistics",
-//             subjectCode: "MA415",
-//             credit: "3",
-//             score: "0",
-//         },
-//         {
-//             Roll_Number: "20/MBT/001",
-//             subject: "Basics of Chemistry and Physics",
-//             subjectCode: "BtMSc511",
-//             credit: "2",
-//             score: "0",
-//         },
-//         {
-//             Roll_Number: "20/MBT/001",
-//             subject: "Biochemistry and Analytical Techniques",
-//             subjectCode: "BtMSc513",
-//             credit: "4",
-//             score: "0",
-//         },
-//         {
-//             Roll_Number: "20/MBT/001",
-//             subject: "Microbiology Lab",
-//             subjectCode: "BtMSc515",
-//             credit: "2",
-//             score: "0",
-//         },
-//         {
-//             Roll_Number: "20/MBT/001",
-//             subject: "Plant and Animal Biotechnology Lab",
-//             subjectCode: "BtMSc517",
-//             credit: "2",
-//             score: "0",
-//         },
-//         {
-//             Roll_Number: "20/MBT/001",
-//             subject: "General Proficiency",
-//             subjectCode: "GP",
-//             credit: "0",
-//             score: "0",
-//         },
-//     ],
-//     result_summary: "Promoted",
-// }
-// showResult(data)
+let data = {
+    id: 13600,
+    Batch: "2020-2022",
+    SCHOOL: "SOBT",
+    Programme: "M.Sc. (Biotechnology)",
+    Semester: "I",
+    Specialization: "-",
+    Roll_Number: "20/MBT/001",
+    "Photo Upload(.jpg)": null,
+    Student_Name: "Adhishree Yadav",
+    Gender: "Female",
+    "Date of Birth": "27/07/2000",
+    Father_s_name: "",
+    Email: "biotech1253@gmail.com",
+    "Mobile no": "8960771253",
+    "Aadhar no": null,
+    "Aadhar Image(.jpg)": null,
+    "Signature(.jpg)": null,
+    "Fee Status": "Submitted",
+    result: [
+        {
+            Roll_Number: "20/MBT/001",
+            subject: "Biochemistry",
+            subjectCode: "BtMSc501",
+            credit: "3",
+            score: "0",
+        },
+        {
+            Roll_Number: "20/MBT/001",
+            subject: "Cell and Molecular Biology",
+            subjectCode: "BtMSc503",
+            credit: "3",
+            score: "0",
+        },
+        {
+            Roll_Number: "20/MBT/001",
+            subject: "Plant and Animal Biotechnology",
+            subjectCode: "BtMSc505",
+            credit: "3",
+            score: "0",
+        },
+        {
+            Roll_Number: "20/MBT/001",
+            subject: "Microbiology",
+            subjectCode: "BtMSc507",
+            credit: "2",
+            score: "0",
+        },
+        {
+            Roll_Number: "20/MBT/001",
+            subject: "Genetics",
+            subjectCode: "BtMSc509",
+            credit: "2",
+            score: "0",
+        },
+        {
+            Roll_Number: "20/MBT/001",
+            subject: "Biostatistics",
+            subjectCode: "MA415",
+            credit: "3",
+            score: "0",
+        },
+        {
+            Roll_Number: "20/MBT/001",
+            subject: "Basics of Chemistry and Physics",
+            subjectCode: "BtMSc511",
+            credit: "2",
+            score: "0",
+        },
+        {
+            Roll_Number: "20/MBT/001",
+            subject: "Biochemistry and Analytical Techniques",
+            subjectCode: "BtMSc513",
+            credit: "4",
+            score: "0",
+        },
+        {
+            Roll_Number: "20/MBT/001",
+            subject: "Microbiology Lab",
+            subjectCode: "BtMSc515",
+            credit: "2",
+            score: "0",
+        },
+        {
+            Roll_Number: "20/MBT/001",
+            subject: "Plant and Animal Biotechnology Lab",
+            subjectCode: "BtMSc517",
+            credit: "2",
+            score: "0",
+        },
+        {
+            Roll_Number: "20/MBT/001",
+            subject: "General Proficiency",
+            subjectCode: "GP",
+            credit: "0",
+            score: "0",
+        },
+    ],
+    result_summary: "Promoted",
+}
+showResult(data)
 function showResult(details) {
     download_button.onclick = () => print(details.Roll_Number)
     // function download(filename) {
@@ -317,6 +317,18 @@ function showResult(details) {
         innerText: details.SCHOOL,
     })
     school_div.append(school_title, school_value)
+    const programe_div = createElement("div", {
+        class: "details_div",
+    })
+    const programe_title = createElement("div", {
+        class: "title",
+        innerText: "Programme: ",
+    })
+    const programe_value = createElement("div", {
+        class: "value",
+        innerText: details.Programme,
+    })
+    programe_div.append(programe_title, programe_value)
     const result_de_div = createElement("div", {
         class: "details_div",
     })
@@ -329,7 +341,7 @@ function showResult(details) {
         innerText: details.result_summary,
     })
     result_de_div.append(result_title, result_value)
-    detail_div.append(roll_number_div, name_div, school_div, result_de_div)
+    detail_div.append(roll_number_div, name_div, school_div, programe_div, result_de_div)
     //table
     const table = createElement("table", {
         class: "table",
@@ -344,15 +356,11 @@ function showResult(details) {
         scope: "col",
         innerText: "Subject Name",
     })
-    const th_tr_thead3 = createElement("th", {
-        scope: "col",
-        innerText: "Credit",
-    })
     const th_tr_thead4 = createElement("th", {
         scope: "col",
-        innerText: "Scored",
+        innerText: "Grade",
     })
-    tr_thead.append(th_tr_thead1, th_tr_thead2, th_tr_thead3, th_tr_thead4)
+    tr_thead.append(th_tr_thead1, th_tr_thead2, th_tr_thead4)
     thead.append(tr_thead)
 
     const tbody = createElement("tbody")
@@ -365,18 +373,18 @@ function showResult(details) {
         let td2 = createElement("td", {
             innerText: row.subject,
         })
-        let td3 = createElement("td", {
-            innerText: row.credit,
-        })
         let td4 = createElement("td", {
             innerText: row.score,
         })
-        tr_tbody.append(td1, td2, td3, td4)
+        tr_tbody.append(td1, td2, td4)
         tbody.append(tr_tbody)
     }
     table.append(thead, tbody)
+    const disclamer = createElement("div", {
+        innerText: "Disclamer"
+    })
     //wrap
-    wrap.append(institute, detail_div, table)
+    wrap.append(institute, detail_div, table, disclamer)
     result_div.append(wrap)
     hideLoading()
 }
