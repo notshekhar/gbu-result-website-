@@ -22,19 +22,22 @@ function insertSummary() {
 
     const [
         school,
-        programme,
-        specialization,
-        splcode,
-        roll_number,
+        programme_code,
         semester,
+        roll_number,
+        programme,
+        splcode,
+        specialization,
+        batch,
         result,
-    ] = [0, 1, 2, 3, 4, 5, 6]
+    ] = [0, 1, 2, 3, 4, 5, 6, 7, 8]
 
     let i = 0
     cols.forEach(async (col) => {
-        let insert = await query(`insert into result_summary values(?, ?)`, [
+        let insert = await query(`insert into result_summary values(?, ?, ?)`, [
             col[roll_number],
             col[result],
+            0
         ])
         console.log(i++)
     })
@@ -74,4 +77,4 @@ function insertResult() {
     })
 }
 insertSummary()
-insertResult()
+// insertResult()
