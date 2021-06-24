@@ -23,6 +23,7 @@ async function getDetails(roll, email, mobile) {
         [roll]
     )
     let result = await query("select * from result where Roll_number=?", [roll])
+    console.log(result.length)
     if (result.length == 0) {
         return {
             get: false,
