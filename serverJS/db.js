@@ -23,10 +23,22 @@ async function getDetails(roll, email, mobile) {
         [roll]
     )
     let result = await query("select * from result where Roll_number=?", [roll])
+    if (result.length == 0) {
+        return {
+            get: false,
+            message:
+                "Data Not Found, Try with different Roll Number or email or mobile",
+        }
+    }
     if (data.length == 1) {
         return {
             get: true,
-            data: { ...data[0], result, result_summary: result_summary[0].result, sgpa: result_summary[0].sgpa },
+            data: {
+                ...data[0],
+                result,
+                result_summary: result_summary[0].result,
+                sgpa: result_summary[0].sgpa,
+            },
         }
     } else {
         return {
