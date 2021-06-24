@@ -95,7 +95,7 @@ submit.onclick = async () => {
     let data = {
         roll_no: roll_no.value.trim(),
         email: email.value.trim(),
-        mobile: mobile.value.trim(),
+        mobile: mobile.value.trim()
     }
     for (let d in data) {
         if (!data[d]) {
@@ -164,6 +164,7 @@ window.onpopstate = (e) => {
 //     id: 13600,
 //     Batch: "2020-2022",
 //     SCHOOL: "SOBT",
+//     sgpa: "8.3",
 //     Programme: "M.Sc. (Biotechnology)",
 //     Semester: "I",
 //     Specialization: "-",
@@ -269,7 +270,7 @@ function showResult(details) {
     //     link.href = canvas.toDataURL()
     //     link.click()
     // }
-    const result_div = document.querySelector(".result_div")
+    const result_div = document.querySelector(".result_div > .result")
     const wrap = createElement("div", {
         class: "wrap",
     })
@@ -341,7 +342,21 @@ function showResult(details) {
         innerText: details.result_summary,
     })
     result_de_div.append(result_title, result_value)
-    detail_div.append(roll_number_div, name_div, school_div, programe_div, result_de_div)
+
+    const sgpa_de_div = createElement("div", {
+        class: "details_div",
+    })
+    const sgpa_title = createElement("div", {
+        class: "title",
+        innerText: "SGPA: ",
+    })
+    const sgpa_value = createElement("div", {
+        class: "value",
+        innerText: details.sgpa,
+    })
+    sgpa_de_div.append(sgpa_title, sgpa_value)
+
+    detail_div.append(roll_number_div, name_div, school_div, programe_div, result_de_div, sgpa_de_div)
     //table
     const table = createElement("table", {
         class: "table",
@@ -380,11 +395,8 @@ function showResult(details) {
         tbody.append(tr_tbody)
     }
     table.append(thead, tbody)
-    const disclamer = createElement("div", {
-        innerText: "Disclamer"
-    })
     //wrap
-    wrap.append(institute, detail_div, table, disclamer)
+    wrap.append(institute, detail_div, table)
     result_div.append(wrap)
     hideLoading()
 }

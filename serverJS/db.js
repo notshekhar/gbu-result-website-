@@ -26,7 +26,7 @@ async function getDetails(roll, email, mobile) {
     if (data.length == 1) {
         return {
             get: true,
-            data: { ...data[0], result, result_summary: result_summary[0].result },
+            data: { ...data[0], result, result_summary: result_summary[0].result, sgpa: result_summary[0].sgpa },
         }
     } else {
         return {

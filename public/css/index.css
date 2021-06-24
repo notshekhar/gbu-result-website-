@@ -299,6 +299,16 @@ body > div > div.body > div.wrap_body > div {
     background-color: white;
     z-index: 10;
 }
+.disclaimer {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 40px;
+}
+.disclaimer > b{
+    margin-left: auto;
+    margin-right: auto;
+}
 .download > .header {
     position: relative;
     display: block;
