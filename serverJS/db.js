@@ -127,7 +127,7 @@ async function getStudentsData(
 ) {
     let { username, password } = decodeJSON(token)
     let data = await query(
-        "select Batch, SCHOOL, Programme, Semester, Roll_Number, Student_Name, `Fee Status` as FeeStatus from students where school=? and Programme=? and Batch=? and Specialization=?",
+        "select Batch, SCHOOL, Programme, Semester, Roll_Number, Student_Name, `Fee Status` as FeeStatus from students where school=? and Programme=? and Batch=? and Specialization=? order by Roll_Number",
         [school, programme, batch, specialization]
     )
     let permission_level = await query(
