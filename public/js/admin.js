@@ -120,7 +120,7 @@ async function createBatchDropDown(school, programme) {
     select.addEventListener("change", function () {
         details.batch = this.value
         // createSpecializationDropDown(school, programme, this.value)
-        DisplyStudentsData(school, programme, batch)
+        DisplyStudentsData(school, programme, this.value)
         showLoading()
     })
     data.forEach((batch) => {
