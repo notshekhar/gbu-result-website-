@@ -1,5 +1,5 @@
 const { promisify } = require("util")
-const { MD5, encodeJSON, decodeJSON } = require("./encryption")
+const { encodeJSON, decodeJSON } = require("./encryption")
 const path = require("path")
 require("dotenv").config()
 
@@ -132,7 +132,7 @@ async function getStudentsData(
     )
     let permission_level = await query(
         "select `Access level` as AccessLevel from users where username=? and password=?",
-        [username, MD5(password)]
+        [username, password]
     )
     console.log(username, password, permission_level)
     return { data, permission: permission_level[0] }
@@ -142,7 +142,7 @@ async function updateData(roll_no, token, data) {
     let { username, password } = decodeJSON(token)
     let user = await query(
         "select `Access level` as AccessLevel from users where username=? and password=?",
-        [username, MD5(password)]
+        [username, password]
     )
     if (user.length != 1) return { update: false }
     if (user[0].AccessLevel != "Edit") return { update: false }
