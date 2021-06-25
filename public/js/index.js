@@ -126,7 +126,7 @@ submit.onclick = async () => {
         if (resData.get) {
             if (!resData.data) {
                 alert(
-                    "Documents not verified contact university admission section"
+                    "Unable to download the result, Follow this link: https://tinyurl.com/GBUstudent"
                     // "No data found Retry with different roll number, email and mobile"
                 )
                 resetForm()
