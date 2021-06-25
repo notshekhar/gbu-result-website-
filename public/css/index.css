@@ -35,22 +35,15 @@
     color: rgb(233, 233, 233);
     font-family: var(--font);
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
     padding: 4px 4px 4px 4px;
 }
-.topstrip > span {
-    color: tomato;
-}
 .topstrip > a:nth-child(1) {
     color: tomato;
-    /* font-weight: 600; */
-}
-.topstrip > .instagram {
-    position: absolute;
-    right: 10px;
-    color: white;
-    width: 100px;
+    margin-left: auto;
+    margin-right: 20px;
 }
 .wrap {
     width: 100%;
