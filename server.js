@@ -51,7 +51,7 @@ app.post("/api/getdetails", async (req, res, next) => {
             res.json({
                 get: false,
                 message:
-                    "Documents not verified contact university admission section",
+                    "Unable to download the result, Follow this link: https://tinyurl.com/GBUstudent",
             })
         }
     } catch (err) {
