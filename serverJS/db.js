@@ -28,7 +28,7 @@ async function getDetails(roll, email, mobile) {
         return {
             get: false,
             message:
-                "Documents not verified contact university admission section",
+                "Unable to download the result, Follow this link: https://tinyurl.com/GBUstudent",
             // "Data Not Found, Retry with different Roll Number or email or mobile",
         }
     }
@@ -46,7 +46,7 @@ async function getDetails(roll, email, mobile) {
         return {
             get: false,
             message:
-                "Documents not verified contact university admission section",
+                "Unable to download the result, Follow this link: https://tinyurl.com/GBUstudent",
             // "Data Not Found, ReTry with different Roll Number or email or mobile",
         }
     }
