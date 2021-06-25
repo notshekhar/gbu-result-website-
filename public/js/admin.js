@@ -119,8 +119,8 @@ async function createBatchDropDown(school, programme) {
     )
     select.addEventListener("change", function () {
         details.batch = this.value
-        // createSpecializationDropDown(school, programme, this.value)
-        DisplyStudentsData(school, programme, this.value)
+        createSpecializationDropDown(school, programme, this.value)
+//         DisplyStudentsData(school, programme, this.value)
         showLoading()
     })
     data.forEach((batch) => {
@@ -135,43 +135,43 @@ async function createBatchDropDown(school, programme) {
     header.append(batch_dropdown)
 }
 
-// async function createSpecializationDropDown(school, programme, batch) {
-//     let res = await fetch(
-//         `/api/get_specialization?school=${school}&programme=${programme}&batch=${batch}`
-//     )
-//     let data = await res.json()
-//     hideLoading()
-//     console.log(data)
-//     let check_div = document.querySelector(".specializations")
-//     if (check_div) check_div.remove()
+async function createSpecializationDropDown(school, programme, batch) {
+    let res = await fetch(
+        `/api/get_specialization?school=${school}&programme=${programme}&batch=${batch}`
+    )
+    let data = await res.json()
+    hideLoading()
+    console.log(data)
+    let check_div = document.querySelector(".specializations")
+    if (check_div) check_div.remove()
 
-//     let specializations_dropdown = createElement("div", {
-//         class: "custom-select specializations",
-//     })
-//     let select = createElement("select")
-//     select.append(
-//         createElement("option", {
-//             hidden: "hidden",
-//             selected: "selected",
-//             innerText: "Select Specializations",
-//         })
-//     )
-//     select.addEventListener("change", function () {
-//         details.specialization = this.value
-//         DisplyStudentsData(school, programme, batch, this.value)
-//         showLoading()
-//     })
-//     data.forEach((specializations) => {
-//         let specializations_dropdown_menu_item = createElement("option", {
-//             class: "dropdown-item",
-//             value: specializations["Specialization"],
-//             innerText: specializations["Specialization"],
-//         })
-//         select.append(specializations_dropdown_menu_item)
-//     })
-//     specializations_dropdown.append(select)
-//     header.append(specializations_dropdown)
-// }
+    let specializations_dropdown = createElement("div", {
+        class: "custom-select specializations",
+    })
+    let select = createElement("select")
+    select.append(
+        createElement("option", {
+            hidden: "hidden",
+            selected: "selected",
+            innerText: "Select Specializations",
+        })
+    )
+    select.addEventListener("change", function () {
+        details.specialization = this.value
+        DisplyStudentsData(school, programme, batch, this.value)
+        showLoading()
+    })
+    data.forEach((specializations) => {
+        let specializations_dropdown_menu_item = createElement("option", {
+            class: "dropdown-item",
+            value: specializations["Specialization"],
+            innerText: specializations["Specialization"],
+        })
+        select.append(specializations_dropdown_menu_item)
+    })
+    specializations_dropdown.append(select)
+    header.append(specializations_dropdown)
+}
 getAdminDetails()
 
 async function DisplyStudentsData(school, programme, batch, specialization) {
