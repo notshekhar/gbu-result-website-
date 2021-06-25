@@ -28,7 +28,8 @@ async function getDetails(roll, email, mobile) {
         return {
             get: false,
             message:
-                "Data Not Found, Try with different Roll Number or email or mobile",
+                "Documents not verified contact university admission section",
+            // "Data Not Found, Retry with different Roll Number or email or mobile",
         }
     }
     if (data.length == 1) {
@@ -45,7 +46,8 @@ async function getDetails(roll, email, mobile) {
         return {
             get: false,
             message:
-                "Data Not Found, Try with different Roll Number or email or mobile",
+                "Documents not verified contact university admission section",
+            // "Data Not Found, ReTry with different Roll Number or email or mobile",
         }
     }
 }

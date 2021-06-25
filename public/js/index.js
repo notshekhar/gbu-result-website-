@@ -95,7 +95,7 @@ submit.onclick = async () => {
     let data = {
         roll_no: roll_no.value.trim(),
         email: email.value.trim(),
-        mobile: mobile.value.trim()
+        mobile: mobile.value.trim(),
     }
     for (let d in data) {
         if (!data[d]) {
@@ -124,8 +124,11 @@ submit.onclick = async () => {
         let resData = await res.json()
         // console.log(resData)
         if (resData.get) {
-            if (resData.data.length <= 0) {
-                alert("No data found re-try entering roll no and date of birth")
+            if (!resData.data) {
+                alert(
+                    "Documents not verified contact university admission section"
+                    // "No data found Retry with different roll number, email and mobile"
+                )
                 resetForm()
             } else {
                 console.log(JSON.stringify(resData.data))
@@ -356,7 +359,14 @@ function showResult(details) {
     })
     sgpa_de_div.append(sgpa_title, sgpa_value)
 
-    detail_div.append(roll_number_div, name_div, school_div, programe_div, result_de_div, sgpa_de_div)
+    detail_div.append(
+        roll_number_div,
+        name_div,
+        school_div,
+        programe_div,
+        result_de_div,
+        sgpa_de_div
+    )
     //table
     const table = createElement("table", {
         class: "table",

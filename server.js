@@ -50,7 +50,8 @@ app.post("/api/getdetails", async (req, res, next) => {
         } else {
             res.json({
                 get: false,
-                message: "Fee Not paid contact in Administration Office",
+                message:
+                    "Documents not verified contact university admission section",
             })
         }
     } catch (err) {
