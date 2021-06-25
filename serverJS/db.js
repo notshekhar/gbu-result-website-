@@ -62,10 +62,10 @@ async function checkFeeStatus(roll_no) {
 }
 
 async function login(username, password) {
-    let encryptPassword = MD5(password)
+    // let encryptPassword = MD5(password)
     let data = await query(
         "select * from users where username=? and password=?",
-        [username, encryptPassword]
+        [username, password]
     )
     if (data.length == 1) {
         return { login: true, token: encodeJSON({ username, password }) }
@@ -75,10 +75,10 @@ async function login(username, password) {
 }
 async function auth(token) {
     let { username, password } = decodeJSON(token)
-    let encryptPassword = MD5(password)
+    // let encryptPassword = MD5(password)
     let data = await query(
         "select * from users where username=? and password=?",
-        [username, encryptPassword]
+        [username, password]
     )
     if (data.length == 1) {
         return { auth: true }
