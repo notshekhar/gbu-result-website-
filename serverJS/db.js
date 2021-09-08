@@ -40,6 +40,8 @@ async function getDetails(roll, email, mobile) {
                 result,
                 result_summary: result_summary[0].result,
                 sgpa: result_summary[0].sgpa,
+                ygpa: result_summary[0].ygpa,
+                cgpa: result_summary[0].cgpa
             },
         }
     } else {
