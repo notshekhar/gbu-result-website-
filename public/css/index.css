@@ -11,7 +11,26 @@
     --font: normal;
     --bold: noe;
 }
+button {
+    border: none;
+    border-radius: 11px;
+    color: white;
+    background-color: blue;
+    transition: all 200ms;
+    padding: 10px;
+}
+.btn {
+    box-shadow: 0px 5px 0px 0px #000088;
+}
 
+.btn:hover {
+    box-shadow: 0px 3px 0px 0px #000088;
+    transform: translateY(3px);
+}
+.btn:active {
+    box-shadow: 0px 0px 0px 0px #000088;
+    transform: translateY(6px);
+}
 .loading {
     display: flex;
     position: fixed;
@@ -41,7 +60,7 @@
     padding: 4px 4px 4px 4px;
 }
 .topstrip > a:nth-child(1) {
-    color: rgb(166, 71, 255);
+    color: blue;
     margin-left: auto;
     margin-right: 20px;
 }
@@ -66,7 +85,7 @@
 }
 .header > .admin > button {
     color: white;
-    background-color: rgb(166, 71, 255);
+    background-color: blue;
     height: 45px;
     border-radius: 18px;
     width: 130px;
@@ -75,7 +94,7 @@
     outline: none;
 }
 .header > .admin > button:active {
-    color: rgb(166, 71, 255);
+    color: blue;
     background-color: white;
 }
 .strip {
@@ -186,7 +205,7 @@
     margin: 10px 50px 0px 50px;
     /* margin-top: 10px; */
     color: white;
-    background: rgb(166, 71, 255);
+    background: blue;
     border: none;
     font-weight: bold;
     outline: none;
@@ -217,7 +236,7 @@ select {
 }
 .submit:active {
     background-color: rgba(0, 0, 0, 0.1);
-    color: rgb(166, 71, 255);
+    color: blue;
 }
 
 /* footer  */
@@ -237,7 +256,7 @@ select {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(166, 71, 255);
+    background-color: blue;
     color: white;
 }
 .top_footer_wrap {
@@ -255,7 +274,7 @@ body > div.body > div > div.footer > div.top_footer > div > div > li {
     border-radius: 5px;
 }
 body > div.body > div > div.footer > div.top_footer > div > div > li:hover {
-    background-color: rgb(166, 71, 255);
+    background-color: blue;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
 }
 body > div.body > div > div.footer > div.top_footer > div > div > li > a {
@@ -320,13 +339,13 @@ body > div > div.body > div.wrap_body > div {
     font-weight: 800;
     top: calc(50% - 17.5px);
     color: white;
-    background: rgb(166, 71, 255);
+    background: blue;
     border: none;
     outline: none;
     border-radius: 4px;
 }
 .download > .header > .downbtn:active {
-    color: rgb(166, 71, 255);
+    color: blue;
     background-color: white;
 }
 .download > .result_div {
@@ -346,7 +365,7 @@ body > div > div.body > div.wrap_body > div {
 .institute_name {
     font-weight: 800;
     font-size: 30px;
-    color: rgb(166, 71, 255);
+    color: blue;
 }
 .detail_div {
     margin: 20px;
@@ -365,7 +384,7 @@ table {
     border: solid 1px;
 }
 table > thead {
-    background-color: rgb(166, 71, 255);
+    background-color: blue;
     color: rgba(0, 0, 0, 0.3);
 }
 .login_wrap {
@@ -428,10 +447,10 @@ table > thead {
     outline: none;
     border: none;
     color: white;
-    background-color: rgb(166, 71, 255);
+    background-color: blue;
 }
 .login_wrap > .wrap > button:active {
-    color: rgb(166, 71, 255);
+    color: blue;
     background-color: white;
 }
 /* @media (max-width: 621px) {
