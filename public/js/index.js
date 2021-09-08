@@ -357,7 +357,22 @@ function showResult(details) {
         class: "value",
         innerText: details.sgpa,
     })
+
     sgpa_de_div.append(sgpa_title, sgpa_value)
+
+    const ygpa_de_div = createElement("div", {
+        class: "details_div",
+    })
+    const ygpa_title = createElement("div", {
+        class: "title",
+        innerText: "YGPA: ",
+    })
+    const ygpa_value = createElement("div", {
+        class: "value",
+        innerText: details.ygpa,
+    })
+    
+    ygpa_de_div.append(ygpa_title, ygpa_value)
 
     detail_div.append(
         roll_number_div,
@@ -365,7 +380,8 @@ function showResult(details) {
         school_div,
         programe_div,
         result_de_div,
-        sgpa_de_div
+        sgpa_de_div,
+        ygpa_de_div
     )
     //table
     const table = createElement("table", {
