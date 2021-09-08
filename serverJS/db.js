@@ -29,7 +29,6 @@ async function getDetails(roll, email, mobile) {
             get: false,
             message:
                 "Unable to download the result, Follow this link: https://tinyurl.com/GBUstudent",
-            // "Data Not Found, Retry with different Roll Number or email or mobile",
         }
     }
     if (data.length == 1) {
